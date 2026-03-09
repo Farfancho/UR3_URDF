@@ -1,0 +1,7 @@
+{
+    "documentId": "8b21ee85213670bb0b068cbb",
+    "outputFormat": "urdf",
+    "packageName": "ur3_description/UR3",
+    "robotName": "UR3_robot",
+    "assemblyName": "AssemblyWithRelations"
+}

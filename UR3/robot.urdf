@@ -1,0 +1,541 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: 8b21ee85213670bb0b068cbb -->
+<robot name="UR3_robot">
+  <!-- Link base_joint -->
+  <link name="base_joint">
+    <inertial>
+      <origin xyz="-0 -0 0.0415762" rpy="0 0 0"/>
+      <mass value="2.65145"/>
+      <inertia ixx="0.00437179" ixy="0" ixz="0" iyy="0.00437179" iyz="0" izz="0.00438481"/>
+    </inertial>
+    <!-- Part base_joint -->
+    <visual>
+      <origin xyz="0 0 -0.006" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/base_joint.stl"/>
+      </geometry>
+      <material name="base_joint_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.006" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/base_joint.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link size_2_flange -->
+  <link name="size_2_flange">
+    <inertial>
+      <origin xyz="0.00525404 -6.588e-08 -0.0620581" rpy="0 0 0"/>
+      <mass value="6.91904"/>
+      <inertia ixx="0.0116967" ixy="-2.6953e-08" ixz="0.00014327" iyy="0.0125839" iyz="-3.9344e-08" izz="0.00824493"/>
+    </inertial>
+    <!-- Part size_2_flange -->
+    <visual>
+      <origin xyz="0 -0 0.005" rpy="-1.5708 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_2_flange.stl"/>
+      </geometry>
+      <material name="size_2_flange_material">
+        <color rgba="0.101961 0.101961 0.101961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 0.005" rpy="-1.5708 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_2_flange.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shoulderbse__1 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/shoulderbse__1.stl"/>
+      </geometry>
+      <material name="shoulderbse__1_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/shoulderbse__1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_cap -->
+    <visual>
+      <origin xyz="-0 -0 -0.122" rpy="-1.5708 0 3.14159"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_2_cap.stl"/>
+      </geometry>
+      <material name="size_2_cap_material">
+        <color rgba="0 0.72549 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0 -0.122" rpy="-1.5708 0 3.14159"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_2_cap.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link size_2_flange_2 -->
+  <link name="size_2_flange_2">
+    <inertial>
+      <origin xyz="0.10111 4.7432e-08 -0.063244" rpy="0 0 0"/>
+      <mass value="12.6295"/>
+      <inertia ixx="0.0177326" ixy="8.075e-09" ixz="0.00159848" iyy="0.179278" iyz="4.7018e-08" izz="0.172923"/>
+    </inertial>
+    <!-- Part size_1_cap -->
+    <visual>
+      <origin xyz="0.255 0 -0.116" rpy="-1.5708 0 3.14159"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_1_cap.stl"/>
+      </geometry>
+      <material name="size_1_cap_material">
+        <color rgba="0 0.72549 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.255 0 -0.116" rpy="-1.5708 0 3.14159"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_1_cap.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_flange_2 -->
+    <visual>
+      <origin xyz="0.05 0 -0.066" rpy="3.14159 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_2_flange.stl"/>
+      </geometry>
+      <material name="size_2_flange_2_material">
+        <color rgba="0.101961 0.101961 0.101961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.05 0 -0.066" rpy="3.14159 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_2_flange.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shoulderbse__1_2 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/shoulderbse__1.stl"/>
+      </geometry>
+      <material name="shoulderbse__1_2_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/shoulderbse__1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_1_flange -->
+    <visual>
+      <origin xyz="0.255 -0 -0.016" rpy="1.5708 0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_1_flange.stl"/>
+      </geometry>
+      <material name="size_1_flange_material">
+        <color rgba="0.101961 0.101961 0.101961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.255 -0 -0.016" rpy="1.5708 0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_1_flange.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_1_shoulder -->
+    <visual>
+      <origin xyz="0.255 -0 -0.011" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_1_shoulder.stl"/>
+      </geometry>
+      <material name="size_1_shoulder_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.255 -0 -0.011" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_1_shoulder.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part upper_arm -->
+    <visual>
+      <origin xyz="0.055 0 -0.066" rpy="3.14159 0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/upper_arm.stl"/>
+      </geometry>
+      <material name="upper_arm_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.055 0 -0.066" rpy="3.14159 0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/upper_arm.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_cap_2 -->
+    <visual>
+      <origin xyz="0 -0 -0.122" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_2_cap.stl"/>
+      </geometry>
+      <material name="size_2_cap_2_material">
+        <color rgba="0 0.72549 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0.122" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_2_cap.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_2_flange_3 -->
+    <visual>
+      <origin xyz="0 0 0.005" rpy="-1.5708 0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_2_flange.stl"/>
+      </geometry>
+      <material name="size_2_flange_3_material">
+        <color rgba="0.101961 0.101961 0.101961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.005" rpy="-1.5708 0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_2_flange.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_1_flange_2 -->
+    <visual>
+      <origin xyz="0.212 0 -0.066" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_1_flange.stl"/>
+      </geometry>
+      <material name="size_1_flange_2_material">
+        <color rgba="0.101961 0.101961 0.101961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.212 0 -0.066" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_1_flange.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link size_1_flange -->
+  <link name="size_1_flange">
+    <inertial>
+      <origin xyz="-0.115651 -1.7635e-08 -0.0447845" rpy="0 0 0"/>
+      <mass value="6.24098"/>
+      <inertia ixx="0.00515197" ixy="4.0867e-08" ixz="-0.00452001" iyy="0.0638653" iyz="1.8466e-08" izz="0.0624256"/>
+    </inertial>
+    <!-- Part size_0__flange -->
+    <visual>
+      <origin xyz="-0.2245 0 -0.004" rpy="-1.5708 0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0__flange.stl"/>
+      </geometry>
+      <material name="size_0__flange_material">
+        <color rgba="0.101961 0.101961 0.101961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.2245 0 -0.004" rpy="-1.5708 0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0__flange.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_0__flange_2 -->
+    <visual>
+      <origin xyz="-0.187 0 -0.05" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0__flange.stl"/>
+      </geometry>
+      <material name="size_0__flange_2_material">
+        <color rgba="0.101961 0.101961 0.101961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.187 0 -0.05" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0__flange.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_1_flange_3 -->
+    <visual>
+      <origin xyz="-0.055 0 -0.05" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_1_flange.stl"/>
+      </geometry>
+      <material name="size_1_flange_3_material">
+        <color rgba="0.101961 0.101961 0.101961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.055 0 -0.05" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_1_flange.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_0_cap -->
+    <visual>
+      <origin xyz="-0.2245 0 -0.095" rpy="-1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0_cap.stl"/>
+      </geometry>
+      <material name="size_0_cap_material">
+        <color rgba="0 0.72549 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.2245 0 -0.095" rpy="-1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0_cap.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part elbow -->
+    <visual>
+      <origin xyz="0 -0 0" rpy="-1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/elbow.stl"/>
+      </geometry>
+      <material name="elbow_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 0" rpy="-1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/elbow.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_0_shoulder_1 -->
+    <visual>
+      <origin xyz="-0.2245 0 -0.007" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0_shoulder_1.stl"/>
+      </geometry>
+      <material name="size_0_shoulder_1_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.2245 0 -0.007" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0_shoulder_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part arm_2 -->
+    <visual>
+      <origin xyz="-0.05 -0 -0.05" rpy="0 0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/arm_2.stl"/>
+      </geometry>
+      <material name="arm_2_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.05 -0 -0.05" rpy="0 0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/arm_2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link size_0__flange -->
+  <link name="size_0__flange">
+    <inertial>
+      <origin xyz="0.00122389 -7.2029e-08 -0.0364276" rpy="0 0 0"/>
+      <mass value="2.62192"/>
+      <inertia ixx="0.00164764" ixy="1.2825e-08" ixz="1.30736e-05" iyy="0.0024947" iyz="-6.844e-09" izz="0.00230052"/>
+    </inertial>
+    <!-- Part size_0_cap_2 -->
+    <visual>
+      <origin xyz="0.045 0 -0.0405" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0_cap.stl"/>
+      </geometry>
+      <material name="size_0_cap_2_material">
+        <color rgba="0 0.72549 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.045 0 -0.0405" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0_cap.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_0_shoulder_1_2 -->
+    <visual>
+      <origin xyz="-0.043 0 -0.0405" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0_shoulder_1.stl"/>
+      </geometry>
+      <material name="size_0_shoulder_1_2_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.043 0 -0.0405" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0_shoulder_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_0__flange_3 -->
+    <visual>
+      <origin xyz="-0.04 0 -0.0405" rpy="0 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0__flange.stl"/>
+      </geometry>
+      <material name="size_0__flange_3_material">
+        <color rgba="0.101961 0.101961 0.101961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.04 0 -0.0405" rpy="0 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0__flange.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link size_0__flange_2 -->
+  <link name="size_0__flange_2">
+    <inertial>
+      <origin xyz="-0.00319722 -6.398e-08 -0.0367956" rpy="0 0 0"/>
+      <mass value="2.8824"/>
+      <inertia ixx="0.00178914" ixy="1.3655e-08" ixz="-3.4133e-05" iyy="0.003137" iyz="-6.987e-09" izz="0.00293888"/>
+    </inertial>
+    <!-- Part size_0_shoulder_3 -->
+    <visual>
+      <origin xyz="-0.043 0 -0.0405" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0_shoulder_3.stl"/>
+      </geometry>
+      <material name="size_0_shoulder_3_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.043 0 -0.0405" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0_shoulder_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_0_cap_3 -->
+    <visual>
+      <origin xyz="0.045 -0 -0.0405" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0_cap.stl"/>
+      </geometry>
+      <material name="size_0_cap_3_material">
+        <color rgba="0 0.72549 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.045 -0 -0.0405" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0_cap.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part size_0__flange_4 -->
+    <visual>
+      <origin xyz="-0.05 0 -0.0405" rpy="-3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0__flange.stl"/>
+      </geometry>
+      <material name="size_0__flange_4_material">
+        <color rgba="0.101961 0.101961 0.101961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.05 0 -0.0405" rpy="-3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/size_0__flange.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link tool_holder -->
+  <link name="tool_holder">
+    <inertial>
+      <origin xyz="0 0 -0.0173078" rpy="0 0 0"/>
+      <mass value="0.301965"/>
+      <inertia ixx="0.000108563" ixy="-0" ixz="-0" iyy="0.000108563" iyz="0" izz="0.000159064"/>
+    </inertial>
+    <!-- Part tool_holder -->
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/tool_holder.stl"/>
+      </geometry>
+      <material name="tool_holder_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://ur3_description/UR3/assets/tool_holder.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from size_0__flange_2 to tool_holder -->
+  <joint name="6" type="revolute">
+    <origin xyz="-0.053 -0 -0.0405" rpy="-1.5708 -0.992087 -1.5708"/>
+    <parent link="size_0__flange_2"/>
+    <child link="tool_holder"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from size_0__flange to size_0__flange_2 -->
+  <joint name="5" type="revolute">
+    <origin xyz="-0.043 0 -0.0405" rpy="3.14159 -1.5708 0"/>
+    <parent link="size_0__flange"/>
+    <child link="size_0__flange_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from size_1_flange to size_0__flange -->
+  <joint name="4" type="revolute">
+    <origin xyz="-0.2245 0 -0.007" rpy="-3.14159 -0 -0"/>
+    <parent link="size_1_flange"/>
+    <child link="size_0__flange"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from size_2_flange_2 to size_1_flange -->
+  <joint name="3" type="revolute">
+    <origin xyz="0.255 -0 -0.011" rpy="3.14159 0 3.14159"/>
+    <parent link="size_2_flange_2"/>
+    <child link="size_1_flange"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from size_2_flange to size_2_flange_2 -->
+  <joint name="2" type="revolute">
+    <origin xyz="0.055 0 -0.066" rpy="-3.14159 1.5708 0"/>
+    <parent link="size_2_flange"/>
+    <child link="size_2_flange_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from base_joint to size_2_flange -->
+  <joint name="1" type="revolute">
+    <origin xyz="0 -0 0.0998" rpy="3.14159 -0 1.5708"/>
+    <parent link="base_joint"/>
+    <child link="size_2_flange"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+</robot>
